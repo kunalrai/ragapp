@@ -51,6 +51,13 @@ def get_embedding(text: str) -> List[float]:
         model=os.getenv("AZURE_OPENAI_EMBEDDINGS_ENGINE")
     )
     return response.data[0].embedding
+def get_embeddings(texts: List[str]) -> List[List[float]]:
+    response = client.embeddings.create(
+        input=texts,
+        model=os.getenv("AZURE_OPENAI_EMBEDDINGS_ENGINE")
+    )
+    return [item.embedding for item in response.data]
+
 
 def get_embeddings(texts: List[str]) -> List[List[float]]:
     return [get_embedding(t) for t in texts]
@@ -108,7 +115,7 @@ def process_query():
             model=os.getenv("AZURE_OPENAI_ENGINE"),
             messages=messages,
             temperature=0.5,
-            max_tokens=800
+            max_tokens=500
         )
 
         return jsonify({"answer": response.choices[0].message.content})
