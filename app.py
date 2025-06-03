@@ -104,7 +104,7 @@ def process_query():
             return jsonify({"answer": "No relevant information found in documents."})
 
         context = "\n---\n".join(chunk[0] for chunk in similar_chunks)
-        print("\n===== CONTEXT SENT TO MODEL =====\n", context[:500])
+        print("\n===== CONTEXT SENT TO MODEL =====\n", context[:3000])
 
         messages = [
             {"role": "system", "content": "You are a domain expert answering based on the given context. If unsure, say 'Not found in docs'."},
