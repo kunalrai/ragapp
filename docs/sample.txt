@@ -1,0 +1,17 @@
+Welcome to our company's knowledge base!
+
+Product Information:
+Our flagship product, the SmartWidget 3000, is a revolutionary device that combines AI and IoT capabilities. It features advanced sensors, real-time data processing, and cloud connectivity. The device is priced at $299.99 and comes with a 2-year warranty.
+
+Technical Specifications:
+- Dimensions: 6" x 4" x 2"
+- Weight: 250g
+- Battery life: 48 hours
+- Wireless connectivity: WiFi 6, Bluetooth 5.0
+- Sensors: Temperature, humidity, motion, light
+
+Customer Support:
+For technical assistance, customers can reach our support team at:
+- Email: support@smartwidget.com
+- Phone: 1-800-SMART-HELP
+- Hours: Monday-Friday, 9 AM - 6 PM EST
